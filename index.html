@@ -21,10 +21,41 @@
         <button id="loginbtn" class="btn btn-success">log in</button>
     </div>
 </div>
+<div id="transaction">
+    <div class="row">
+        <div class="col-6 col-md-4">
+            <div class="deposit status">
+                <h5>Deposit</h5>
+                <h2>$00</h2>
+            </div>
+
+        </div>
+        <div class="col-6 col-md-4">
+
+            <div class="withdraw status">
+                <h5>Withdraw</h5>
+                <h2>$00</h2>
+            </div>
+
+        </div>
+        <div class="col-6 col-md-4">
+            <div class="total status">
+                <h5>Balance</h5>
+                <h2>$1200</h2>
+            </div>
+
+        </div>
+    </div>
+
+</div>
 <script>
     var login = document.getElementById('loginbtn')
     login.addEventListener("click", function() {
-        console.log("clicked")
+        var loginarea = document.getElementById('loginArea')
+        loginarea.style.display = "none"
+        var transactionArea = document.getElementById('transaction')
+        transactionArea.style.display = "block"
+
     })
 </script>
 
